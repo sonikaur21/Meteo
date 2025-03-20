@@ -19,7 +19,10 @@ function refreshWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = formatDay(date);
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = ` <img src= "${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
+
 function formatDay(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
