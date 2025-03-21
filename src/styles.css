@@ -82,3 +82,9 @@ footer {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.6);
 }
+
+.image {
+  max-width: 75px;
+  position: relative;
+  top: 10px;
+}
