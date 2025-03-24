@@ -11,7 +11,7 @@ a {
     rgb(252, 173, 115) 0%,
     rgb(139, 102, 241) 100%
   );
-  max-width: 90%; /* Adjust for smaller screens */
+  max-width: 90%;
   width: 600px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -19,12 +19,12 @@ a {
   padding: 30px;
 }
 header {
-  border-bottom: 1px solid #f9f7fe;
+  border-bottom: 1px solid none;
   padding: 0 0 30px 0;
 }
 .search-form {
   display: flex;
-  flex-wrap: wrap; /* Allow stacking on small screens */
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
 }
@@ -93,7 +93,7 @@ main {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-  flex-wrap: wrap; /* Allow items to wrap */
+  flex-wrap: wrap;
 }
 .weather-forecast-date {
   text-align: center;
@@ -118,13 +118,15 @@ main {
   padding: 0 10px;
 }
 footer {
-  border-bottom: 1px solid #f9f7fe;
+  border-bottom: 1px solid none;
   padding: 30px 0 0px 0;
   text-align: center;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.6);
 }
-
+footer a {
+  text-decoration: none;
+}
 .image {
   max-width: 75px;
   position: relative;
